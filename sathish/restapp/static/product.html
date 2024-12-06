@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Indian Menu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        body {
+            background-image: url('Beige Simple Food Catering Instagram Post.png'); /* Replace with a traditional Indian-themed image */
+            background-size: cover;
+            background-position: center;
+            color: #333;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+        }
+
+        #nav {
+            background-color: rgb(132, 200, 223);
+            color: pink;
+            padding: 30px;
+            width: 100%;
+            box-sizing: border-box;
+            position: sticky;
+            top: 0;
+        }
+
+        #nav h1 {
+            display: inline;
+            font-size: 40px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 10px;
+            text-align: center;
+        }
+
+        li {
+            display: inline;
+            color: wheat;
+            margin: 0 20px;
+            font-size: 18px;
+        }
+
+        li:hover {
+            color: white;
+            cursor: pointer;
+        }
+
+        .heading2 {
+            padding-top: 100px;
+            padding-bottom: 10px;
+            text-align: center;
+            color: black;
+            font-size: 32px;
+            width: 100%;
+        }
+
+        .product {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Automatically adjusts the grid to fit the screen */
+            gap: 20px;
+            padding: 30px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        .box {
+            border: 2px solid wheat;
+            background-color: rgb(255, 224, 254);
+            cursor: pointer;
+            padding: 10px;
+            text-align: center;
+            border-radius: 15px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .box::before {
+            content: "";
+            display: block;
+            padding-top: 133.33%; /* 3:4 aspect ratio (3 / 4 = 0.75 = 75% padding-top) */
+        }
+
+        .box img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image covers the box without distorting */
+            border-radius: 10px;
+        }
+
+        a {
+            color: #062d41;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: rgba(228, 76, 76, 0.986);
+            cursor: pointer;
+        }
+
+        p {
+            color: brown;
+            text-align: center;
+            font-size: 16px;
+        }
+
+        h1 {
+            color: black;
+            text-align: center;
+        }
+
+        .bottomdiv {
+            background-color: aqua;
+            color: black;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            display: block;
+            width: 100%;
+            box-sizing: border-box;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <nav id="nav">
+            <h1 class="heading1">SATHISH.B (24900077)</h1>
+            <ul>
+                <li><a href="home.html" target="_blank">Home</a></li>
+                <li><a href="product.html" target="_blank">Product</a></li>
+                <li><a href="adminstration.html" target="_blank">administration</a></li>
+                <li><a href="contact.html" target="_blank">Contact</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <h1 class="heading2">People</h1>
+
+    <div class="product">
+        <!-- Food Items (Images remain unchanged as per your requirement) -->
+        <div class="box">
+            <img src="Yellow Food Promotion New Indian Restaurant Menu.png" alt="Biryani">
+            <h1>Hyderabadi Biryani</h1>
+            <p>A flavorful rice dish made with spiced meat, saffron, and basmati rice, served with raita.</p>
+        </div>
+        <div class="box">
+            <img src="Colourful Black and Yellow Indian Food Promotion Instagram Story.png" alt="Samosa">
+            <h1>Samosa</h1>
+            <p>Fried pastry pockets filled with spicy potato and peas, served with tamarind chutney.</p>
+        </div>
+        <div class="box">
+            <img src="Yellow And Brown Colourful Gulab Jamun Recipe Instagram Post.png" alt="Gulab Jamun">
+            <h1>Gulab Jamun</h1>
+            <p>A popular Indian dessert made of deep-fried dough balls soaked in a sugary syrup.</p>
+        </div>
+        <div class="box">
+            <img src="Orange and Yellow Chicken Tikka Masala Weekend Offer Instagram Post.png" alt="Butter Chicken">
+            <h1>Butter Chicken</h1>
+            <p>Succulent chicken cooked in a rich and creamy tomato-based sauce.</p>
+        </div>
+        <div class="box">
+            <img src="Orange and Black Bold Paneer Tikka Restaurant Instagram Post.png" alt="Paneer Tikka">
+            <h1>Paneer Tikka</h1>
+            <p>Grilled cottage cheese marinated with spices, served with mint chutney.</p>
+        </div>
+        <div class="box">
+            <img src="black white funny simple restaurant food menu.png" alt="Masala Dosa">
+            <h1>Masala Dosa</h1>
+            <p>Crispy rice crepes stuffed with spiced potatoes, served with sambar and coconut chutney.</p>
+        </div>
+        <div class="box">
+            <img src="1.png" alt="Chole Bhature">
+            <h1>Chole Bhature</h1>
+            <p>Fried bread served with spicy chickpea curry, a popular North Indian dish.</p>
+        </div>
+        <div class="box">
+            <img src="Black and Yellow Street Foods of Indian YouTube Thumbnail.png" alt="Pani Puri">
+            <h1>Pani Puri</h1>
+            <p>Crispy puris filled with spicy tamarind water, potatoes, and chickpeas.</p>
+        </div>
+        <div class="box">
+            <img src="White And Brown Minimalist Roasted Chicken Instagram Post.png" alt="Tandoori Chicken">
+            <h1>Tandoori Chicken</h1>
+            <p>Spiced chicken cooked in a traditional tandoor oven, served with naan.</p>
+        </div>
+        <div class="box">
+            <img src="Yellow Food Promotion New Indian Restaurant Menu (1).png" alt="Briyani">
+            <h1>Briyani</h1>
+            <p>A flavorful lamb curry made with aromatic spices and a rich, red sauce.</p>
+        </div>
+        <div class="box">
+            <img src="Orange and White Bold Restaurant Instagram Post.png" alt="Aloo Paratha">
+            <h1>Aloo Paratha</h1>
+            <p>Flatbread stuffed with spiced mashed potatoes, typically served with yogurt and pickle.</p>
+        </div>
+        <div class="box">
+            <img src="Brown and White Modern Playful Indian Beverage Sale Instagram Story.png" alt="Lassi">
+            <h1>Lassi</h1>
+            <p>A refreshing yogurt-based drink, often served sweet or salty.</p>
+        </div>
+    </div>
+
+    <div class="bottomdiv">
+        <b>&copy; 2024 Indian Flavors Restaurant | Developed by SATHISH.B (24900077)</b>
+    </div>
+
+</body>
+</html>
