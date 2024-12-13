@@ -30,774 +30,1083 @@ Publish the website in the given URL.
 ## PROGRAM:
 ```
 home.html
-
 home.html
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Little Lemon</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f7f7f7;
-    }
-    .header {
-      background-color: #dfe6e9;
-      text-align: center;
-      padding: 20px;
-    }
-    .header img {
-      width: 50px;
-      vertical-align: middle;
-    }
-    .header h1 {
-      display: inline;
-      margin-left: 10px;
-    }
-    .navbar {
-      display: flex;
-      justify-content: center;
-      background-color: #2d3436;
-      padding: 10px;
-    }
-    .navbar a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .hero {
-      background-image: url('Black and White Modern Food New Menu Instagram Post.png'); /* Replace with your image path */
-      background-size: cover;
-      background-position: center;
-      color: white;
-      text-align: center;
-      padding: 50px 20px;
-    }
-    .hero h2 {
-      font-size: 36px;
-      margin: 0;
-    }
-    .hero p {
-      margin-top: 10px;
-      font-size: 18px;
-    }
-    .container {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      padding: 20px;
-    }
-    .card {
-      background-color: #ffeaa7;
-      width: 250px; /* Adjusted for smaller card size */
-      margin: 10px;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-      text-align: center;
-    }
-    .card img {
-      width: 100%;
-      max-width: 150px; /* Smaller image size */
-      height: auto;
-      border-radius: 8px;
-    }
-    .card h3 {
-      margin-top: 10px;
-    }
-    .card p {
-      font-size: 14px;
-      margin: 10px 0;
-    }
-    .card a {
-      color: #2d3436;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .card a:hover {
-      color: #00cec9;
-    }
-    .footer {
-      background-color: #2d3436;
-      color: white;
-      text-align: center;
-      padding: 10px 0;
-      margin-top: 20px;
-    }
-    .footer a {
-      color: #00cec9;
-      text-decoration: none;
-    }
-  </style>
-</head>
-<body>
-  
 
-  <div class="navbar">
-    <a href="#home">Home</a>
-    <a href="#menu">Products</a>
-    <a href="#admin">Administration</a>
-    <a href="#contact">Contact</a>
-  </div>
-
-  <div class="hero">
-    <h2>30% Off This Weekend</h2>
-    <p>Enjoy exclusive discounts on our delicious menu items this weekend!</p>
-  </div>
-
-  <div class="container">
-    <div class="card">
-      <img src="Black and White Modern Food New Menu Instagram Post.png" alt="Menu Image">
-      <h3>Our New Menu</h3>
-      <p>Discover our new menu with exciting dishes you'll love. Fresh and flavorful!</p>
-      <a href="#menu">See our new menu</a>
-    </div>
-    <div class="card">
-      <img src="Screenshot (58).png" alt="Table Booking">
-      <h3>Book a Table</h3>
-      <p>Reserve your spot and enjoy a delightful dining experience with us.</p>
-      <a href="#booking">Book your table now</a>
-    </div>
-    <div class="card">
-      <img src="Beige Aesthetic Opening Hours Instagram Story.png" alt="Opening Hours">
-      <h3>Opening Hours</h3>
-      <p>Mon - Fri: 2 PM - 10 PM<br>Sat: 2 PM - 11 PM<br>Sun: 2 PM - 9 PM</p>
-    </div>
-  </div>
-
-  <div class="footer">
-    <p>Designed and Developed by <a href="#">SATHISH.B (24900077)</a></p>
-  </div>
-
-</body>
-</html>
-adminstration.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Softweb Members</title>
+    <title>foodie..!- Home</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-
-        /* Add background image */
+      
         body {
-            background-image: url('Green Wateroclor Leaf Linktree Background.png'); /* Replace 'background-image.jpg' with the path to your background image */
-            background-size: cover; /* Make the background cover the entire screen */
-            background-position: center; /* Center the image */
-            background-repeat: no-repeat; /* Prevent the image from repeating */
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            box-sizing: border-box;
         }
 
-        #nav {
-            background-color: rgb(179, 229, 245);
-            color: #000000;
-            padding: 15px;
-            opacity: 0.8; /* Add some transparency to allow background image to be visible */
+        *, *::before, *::after {
+            box-sizing: inherit;
         }
 
-        li, .heading1, ul {
-            display: inline;
+        header {
+            background: #054c04;
+            color: #333;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        ul {
-            margin-left: 45%;
+        header img {
+            height: 40px;
         }
 
-        li {
-            color: lightblue;
-        }
-
-        li:hover {
-            color: #fafafa;
-            cursor: pointer;
-        }
-
-        input {
-            width: 60%;
-            padding: 15px;
-        }
-
-        a {
-            color: teal;
+        header nav a {
             text-decoration: none;
+            color: #f9f9f9;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: color 0.3s ease;
         }
 
-        a:hover {
-            color: #ffffff;
-            cursor: pointer;
+        header nav a:hover {
+            color: #ff5722;
         }
 
-        .heading2 {
-            padding-top: 100px;
-            padding-bottom: 10px;
-            text-align: center;
-            color: #63b8c0;
+        .banner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 20px;
+            background: url('banner-placeholder.jpg') no-repeat center center/cover;
+            color: white;
+            height: 300px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
         }
 
-        .bottomdiv {
-            background-color: aqua;
+        .banner-content {
+            max-width: 50%;
+        }
+
+        .banner-content h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: rgb(4, 82, 38);
+        }
+
+        .banner-content p {
+            font-size: 1rem;
+            margin-bottom: 15px;
             color: black;
-            text-align: center;
-            position: relative;
-            display: block;
-            margin-top: 0.7px;
         }
 
-        img {
-            border-radius: 50%;
-            width: 200px;
-            display: inline;
+        .banner-content a {
+            background: #ff5722;
+            color: white;
+            padding: 8px 15px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .banner-content a:hover {
+            background: #e64a19;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+            gap: 15px;
+            background: #f9f9f9;
+        }
+
+        .feature {
+            background: white;
+            border-radius: 10px;
             padding: 15px;
-        }
-
-        .person {
-            margin: 150px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            flex: 1;
             text-align: center;
         }
 
-        b, p {
-            color: black;
-            text-align: center;
+        .feature img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
         }
 
-        .quote {
-            font-style: italic;
-            color: #888888;
+        .feature h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #1f1714;
+        }
+
+        .feature p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        footer {
+            background: #333;
+            color: white;
             text-align: center;
+            padding: 10px 0;
             margin-top: 10px;
         }
+
+        footer a {
+            color: #ff5722;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ffdd57;
+        }
+
+        @media (max-width: 768px) {
+            .banner {
+                flex-direction: column;
+                height: auto;
+                text-align: center;
+            }
+
+            .banner-content {
+                max-width: 100%;
+            }
+
+            .features {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .feature {
+                flex: none;
+            }
+
+            header nav a {
+                margin: 0 5px;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="header">
-        <nav id="nav">
-            <h1 class="heading1">FOODIE..!</h1>
-                <ul>
-                    <li class="li1"> 
-                        <a href="home.html" target="_blank">Home  |</a>
-                    </li>
-                    <li class="li2"> 
-                        <a href="product.html" target="_blank">Products  |</a>
-                    </li>
-                    <li class="li3"> 
-                        <a href="administration.html" target="_blank">Administration  |</a> <!-- Fixed the link here -->
-                    </li>
-                    <li class="li4"> 
-                        <a href="contact.html" target="_blank">Contact</a>
-                    </li>
-                </ul>
+
+    <header>
+        
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="reservation.html">Reservations</a>
+            <a href="contact.html">Contact</a>
+            <a href="admin.html">Administration</a>
         </nav>
+    </header>
+
+    <div class="banner">
+        <div class="banner-content">
+            <h1>Welcome to FOODIE..!</h1>
+            <p>Experience the finest flavors and a cozy ambiance at Olive Garden. We serve happiness on a plate!</p>
+            <a href="#features">Explore Now</a>
+        </div>
     </div>
 
-    <h1 class="heading2">Members</h1>
-    <table class="person">
-        <tr>
-            <td>
-                <img src="Divya Bharathi.jpeg" width="100" height="160">
-            </td>
-            <td>
-                <img src="nazhiriya.jpg" width="100" height="160">
-            </td>
-            <td>
-                <img src="saipalavi.jpg" width="100" height="160">
-            </td>
-            <td>
-                <img src="samantha.jpg" width="100" height="160">
-            </td>
-            <td>
-                <img src="janvi.jpeg" width="100" height="160">
-            </td>
-            <td>
-                <img src="sreeleela.jpg" width="100" height="160">
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <b>Divya</b>
-                <p>Co-Founder</p>
-            </td>
-            <td>
-                <b>Nani</b>
-                <p>Asst. Director</p>
-            </td>
-            <td>
-                <b>Sai Pallavi</b>
-                <p>Marketing Director</p>
-            </td>
-            <td>
-                <b>Samantha</b>
-                <p>Head Chef</p>
-            </td>
-            <td>
-                <b>Janvi</b>
-                <p>Founder</p>
-            </td>
-            <td>
-                <b>Sreeleela</b>
-                <p>Owner</p>
-            </td>
-        </tr>
-    </table>
+    <section id="features" class="features">
+        <div class="feature">
+            <img src="Black and White Modern Food New Menu Instagram Post.png" alt="Fresh Ingredients">
+            <h3>Fresh Ingredients</h3>
+            <p>We source only the freshest and most organic ingredients to create our dishes.</p>
+        </div>
+        <div class="feature">
+            <img src="black white funny simple restaurant food menu.png" alt="Cozy Ambiance">
+            <h3>Cozy Ambiance</h3>
+            <p>Enjoy your meals in a warm, welcoming, and beautifully designed space.</p>
+        </div>
+        <div class="feature">
+            <img src="White Restaurant Coming Soon Instagram Post.png" alt="Easy Reservations">
+            <h3>Easy Reservations</h3>
+            <p>Book your table in seconds and guarantee yourself an unforgettable experience.</p>
+        </div>
+    </section>
 
-    <!-- Quotes section for restaurant -->
-    <div class="quote">
-        <p>"Good food is good mood."</p>
-        <p>"Eating is a necessity, but cooking is an art."</p>
-        <p>"There is no sincerer love than the love of food."</p>
-    </div>
+    <footer>
+        <p>&copy; 2024 OLIVE GARDEN. All rights reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
 
-    <div class="bottomdiv">
-        <p>Copyrights @2024 and Developed BY SATHISH.B</p>
-    </div>
 </body>
 </html>
-product.html
+menu.html
+menu.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Our Indian Menu</title>
+    <title>OLIVE GARDEN - Menu</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
-
         body {
-            background-image: url('Beige Simple Food Catering Instagram Post.png'); /* Replace with a traditional Indian-themed image */
-            background-size: cover;
-            background-position: center;
-            color: #333;
-            padding: 0;
             margin: 0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            box-sizing: border-box;
+        }
+
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+
+        header {
+            background: #054c04;
+            color: #fff;
+            padding: 10px 20px;
             display: flex;
-            flex-direction: column;
             align-items: center;
-            justify-content: flex-start;
+            justify-content: space-between;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        #nav {
-            background-color: rgb(132, 200, 223);
-            color: pink;
-            padding: 30px;
-            width: 100%;
-            box-sizing: border-box;
-            position: sticky;
-            top: 0;
-        }
-
-        #nav h1 {
-            display: inline;
-            font-size: 40px;
-        }
-
-        ul {
-            list-style: none;
-            padding: 10px;
-            text-align: center;
-        }
-
-        li {
-            display: inline;
-            color: wheat;
-            margin: 0 20px;
-            font-size: 18px;
-        }
-
-        li:hover {
-            color: white;
-            cursor: pointer;
-        }
-
-        .heading2 {
-            padding-top: 100px;
-            padding-bottom: 10px;
-            text-align: center;
-            color: black;
-            font-size: 32px;
-            width: 100%;
-        }
-
-        .product {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); /* Automatically adjusts the grid to fit the screen */
-            gap: 20px;
-            padding: 30px;
-            width: 100%;
-            box-sizing: border-box;
-        }
-
-        .box {
-            border: 2px solid wheat;
-            background-color: rgb(255, 224, 254);
-            cursor: pointer;
-            padding: 10px;
-            text-align: center;
-            border-radius: 15px;
-            position: relative;
-            overflow: hidden;
-        }
-
-        .box::before {
-            content: "";
-            display: block;
-            padding-top: 133.33%; /* 3:4 aspect ratio (3 / 4 = 0.75 = 75% padding-top) */
-        }
-
-        .box img {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* Ensures the image covers the box without distorting */
-            border-radius: 10px;
-        }
-
-        a {
-            color: #062d41;
+        header nav a {
             text-decoration: none;
+            color: #f9f9f9;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: color 0.3s ease;
         }
 
-        a:hover {
-            color: rgba(228, 76, 76, 0.986);
-            cursor: pointer;
+        header nav a:hover {
+            color: #ffdd57;
         }
 
-        p {
-            color: brown;
-            text-align: center;
-            font-size: 16px;
+        header h1 {
+            font-size: 1.5rem;
         }
 
-        h1 {
-            color: black;
-            text-align: center;
-        }
-
-        .bottomdiv {
-            background-color: aqua;
-            color: black;
-            text-align: center;
+        .menu-container {
             padding: 20px;
-            position: relative;
-            display: block;
+            background: #f9f9f9;
+            text-align: center;
+        }
+
+        .menu-container h1 {
+            font-size: 2rem;
+            color: #054c04;
+            margin-bottom: 15px;
+        }
+
+        .menu-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+        }
+
+        .menu-item {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 280px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .menu-item img {
             width: 100%;
-            box-sizing: border-box;
-            margin-top: 50px;
+            height: 180px;
+            object-fit: cover;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-details {
+            padding: 10px;
+        }
+
+        .menu-details h3 {
+            font-size: 1.2rem;
+            color: #054c04;
+            margin-bottom: 8px;
+        }
+
+        .menu-details p {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .menu-details .price {
+            font-weight: bold;
+            font-size: 1rem;
+            color: #ff5722;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 10px;
+        }
+
+        footer a {
+            color: #ff5722;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ffdd57;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.2rem;
+            }
+
+            .menu-items {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .menu-item {
+                width: 100%;
+            }
+
+            header nav a {
+                margin: 0 5px;
+            }
         }
     </style>
 </head>
 <body>
 
-    <div class="header">
-        <nav id="nav">
-            <h1 class="heading1">SATHISH.B (24900077)</h1>
-            <ul>
-                <li><a href="home.html" target="_blank">Home</a></li>
-                <li><a href="product.html" target="_blank">Product</a></li>
-                <li><a href="adminstration.html" target="_blank">administration</a></li>
-                <li><a href="contact.html" target="_blank">Contact</a></li>
-            </ul>
+    <header>
+        <h1>Foodie..!</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="reservation.html">Reservations</a>
+            <a href="contact.html">contact</a>
+            <a href="admin.html">Administration</a>
         </nav>
-    </div>
+    </header>
 
-    <h1 class="heading2">People</h1>
+    <div class="menu-container">
+        <h1>Our Menu</h1>
+        <div class="menu-items">
+            <div class="menu-item">
+                <img src="Yellow Food Promotion New Indian Restaurant Menu.png" alt="Spaghetti">
+                <div class="menu-details">
+                    <h3>hydrabad briyani</h3>
+                   <p>. The genuine Hyderabadi biryani is painstakingly made in the Kutchi (raw) biryani method, in which raw rice and raw meat are cooked together in a handi (earthen pot) with spices and a small amount of water.</p>
+                    <p class="price">₹250/-</p>
+                </div>
+            </div>
 
-    <div class="product">
-        <!-- Food Items (Images remain unchanged as per your requirement) -->
-        <div class="box">
-            <img src="Yellow Food Promotion New Indian Restaurant Menu.png" alt="Biryani">
-            <h1>Hyderabadi Biryani</h1>
-            <p>A flavorful rice dish made with spiced meat, saffron, and basmati rice, served with raita.</p>
-        </div>
-        <div class="box">
-            <img src="Colourful Black and Yellow Indian Food Promotion Instagram Story.png" alt="Samosa">
-            <h1>Samosa</h1>
-            <p>Fried pastry pockets filled with spicy potato and peas, served with tamarind chutney.</p>
-        </div>
-        <div class="box">
-            <img src="Yellow And Brown Colourful Gulab Jamun Recipe Instagram Post.png" alt="Gulab Jamun">
-            <h1>Gulab Jamun</h1>
-            <p>A popular Indian dessert made of deep-fried dough balls soaked in a sugary syrup.</p>
-        </div>
-        <div class="box">
-            <img src="Orange and Yellow Chicken Tikka Masala Weekend Offer Instagram Post.png" alt="Butter Chicken">
-            <h1>Butter Chicken</h1>
-            <p>Succulent chicken cooked in a rich and creamy tomato-based sauce.</p>
-        </div>
-        <div class="box">
-            <img src="Orange and Black Bold Paneer Tikka Restaurant Instagram Post.png" alt="Paneer Tikka">
-            <h1>Paneer Tikka</h1>
-            <p>Grilled cottage cheese marinated with spices, served with mint chutney.</p>
-        </div>
-        <div class="box">
-            <img src="black white funny simple restaurant food menu.png" alt="Masala Dosa">
-            <h1>Masala Dosa</h1>
-            <p>Crispy rice crepes stuffed with spiced potatoes, served with sambar and coconut chutney.</p>
-        </div>
-        <div class="box">
-            <img src="1.png" alt="Chole Bhature">
-            <h1>Chole Bhature</h1>
-            <p>Fried bread served with spicy chickpea curry, a popular North Indian dish.</p>
-        </div>
-        <div class="box">
-            <img src="Black and Yellow Street Foods of Indian YouTube Thumbnail.png" alt="Pani Puri">
-            <h1>Pani Puri</h1>
-            <p>Crispy puris filled with spicy tamarind water, potatoes, and chickpeas.</p>
-        </div>
-        <div class="box">
-            <img src="White And Brown Minimalist Roasted Chicken Instagram Post.png" alt="Tandoori Chicken">
-            <h1>Tandoori Chicken</h1>
-            <p>Spiced chicken cooked in a traditional tandoor oven, served with naan.</p>
-        </div>
-        <div class="box">
-            <img src="Yellow Food Promotion New Indian Restaurant Menu (1).png" alt="Briyani">
-            <h1>Briyani</h1>
-            <p>A flavorful lamb curry made with aromatic spices and a rich, red sauce.</p>
-        </div>
-        <div class="box">
-            <img src="Orange and White Bold Restaurant Instagram Post.png" alt="Aloo Paratha">
-            <h1>Aloo Paratha</h1>
-            <p>Flatbread stuffed with spiced mashed potatoes, typically served with yogurt and pickle.</p>
-        </div>
-        <div class="box">
-            <img src="Brown and White Modern Playful Indian Beverage Sale Instagram Story.png" alt="Lassi">
-            <h1>Lassi</h1>
-            <p>A refreshing yogurt-based drink, often served sweet or salty.</p>
+            <div class="menu-item">
+                <img src="Screenshot (71).png" alt="Pizza">
+                <div class="menu-details">
+                    <h3>Margherita Pizza</h3>
+                    <p>Wood-fired pizza topped with fresh basil, tomatoes, and mozzarella.</p>
+                    <p class="price">₹350/-</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="Screenshot (72).png" alt="Lasagna">
+                <div class="menu-details">
+                    <h3>Cheesy Lasagna</h3>
+                    <p>Layered lasagna with a creamy blend of cheese and savory sauce.</p>
+                    <p class="price">₹250/-</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="Orange and Black Bold Paneer Tikka Restaurant Instagram Post.png" alt="Salad">
+                <div class="menu-details">
+                    <h3>panner tikka</h3>
+                    <p>an Indian dish made from chunks of paneer/ chhena marinated in spices and grilled in a tandoor.</p>
+                    <p class="price">₹280/-</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="Screenshot (73).png" alt="Risotto">
+                <div class="menu-details">
+                    <h3>Mushroom Risotto</h3>
+                    <p>Creamy risotto with fresh mushrooms and Parmesan cheese.</p>
+                    <p class="price">₹250/-</p>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="Screenshot (74).png" alt="Tiramisu">
+                <div class="menu-details">
+                    <h3>Tiramisu</h3>
+                    <p>A classic Italian dessert made with mascarpone and espresso-soaked ladyfingers.</p>
+                    <p class="price">₹180/-</p>
+                </div>
+            </div>
         </div>
     </div>
 
-    <div class="bottomdiv">
-        <b>&copy; 2024 Indian Flavors Restaurant | Developed by SATHISH.B (24900077)</b>
+    <footer>
+        <p>&copy; 2024 FOODIE..!. All rights reserved. | <a href="home.html">Back to Home</a></p>
+    </footer>
+
+</body>
+</html>
+reservation.html
+reservation.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodie..! - Reservations</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            box-sizing: border-box;
+        }
+
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+
+        header {
+            background: #054c04;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            height: 40px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #f9f9f9;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: #ff5722;
+        }
+
+        .reservation-banner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('Green Wateroclor Leaf Linktree Background.png') no-repeat center center/cover;
+            height: 300px;
+            text-align: center;
+            color: white;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        .reservation-banner h1 {
+            font-size: 3rem;
+            margin: 0;
+            color: #333;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        .reservation-form {
+            display: flex;
+            justify-content: center;
+            padding: 20px;
+            background: #f9f9f9;
+        }
+
+        .form-container {
+            background: rgb(131, 226, 221);
+            padding: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            width: 100%;
+            max-width: 500px;
+        }
+
+        .form-container h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #054c04;
+            text-align: center;
+        }
+
+        .form-container label {
+            display: block;
+            margin: 10px 0 5px;
+            font-weight: bold;
+        }
+
+        .form-container input, .form-container select, .form-container textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 5px 0 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .form-container button {
+            width: 100%;
+            padding: 10px;
+            background: #ff5722;
+            color: white;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .form-container button:hover {
+            background: #e64a19;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 10px;
+        }
+
+        footer a {
+            color: #ff5722;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ffdd57;
+        }
+
+        @media (max-width: 768px) {
+            header img {
+                height: 30px;
+            }
+
+            .reservation-banner h1 {
+                font-size: 1.5rem;
+            }
+
+            .form-container {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="olivegarden-logo.png" alt="Olive Garden Logo">
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="reservation.html">Reservations</a>
+            <a href="contact.html">Contact</a>
+            <a href="admin.html">Administration</a>
+        </nav>
+    </header>
+
+    <div class="reservation-banner">
+        <img src="">
+        <h1>Reserve Your Table Today!</h1>
     </div>
+
+    <section class="reservation-form">
+        <div class="form-container">
+            <h2>Make a Reservation</h2>
+            <form action="/submit-reservation" method="POST">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
+
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+                <label for="date">Reservation Date</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="time">Reservation Time</label>
+                <input type="time" id="time" name="time" required>
+
+                <label for="guests">Number of Guests</label>
+                <select id="guests" name="guests" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+
+                <label for="message">Special Requests</label>
+                <textarea id="message" name="message" placeholder="Any special requests or dietary preferences?" rows="4"></textarea>
+
+                <button type="submit">Reserve Now</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 OLIVE GARDEN. All rights reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
 
 </body>
 </html>
 contact.html
+contact.html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Softweb Contact</title>
+    <title>Foodie..! - Contact Us</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-        }
         body {
-            background-image: url('restweb.png');
-            background-size: cover;
-            color: #000;
-        }
-        #nav {
-            background-color: rgba(240, 149, 191, 0.842);
-            color: #000000;
-            padding: 15px;
-            position: sticky;
-            top: 0;
-            width: 100%;
-        }
-        ul {
             margin: 0;
-            padding: 0;
-            text-align: center;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            box-sizing: border-box;
         }
-        li {
-            display: inline;
-            margin: 0 15px;
+
+        *, *::before, *::after {
+            box-sizing: inherit;
         }
-        li a {
-            color: #074565;
+
+        header {
+            background: #054c04;
+            color: #333;
+            padding: 15px 30px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            height: 50px;
+        }
+
+        header nav a {
             text-decoration: none;
+            color: #f9f9f9;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: color 0.3s ease;
         }
-        li a:hover {
-            color: white;
+
+        header nav a:hover {
+            color: #ff5722;
         }
-        .heading1 {
-            font-size: 32px;
-            color: #000;
-        }
-        .heading2 {
-            padding-top: 100px;
-            text-align: center;
-            color: #c00000;
-            font-size: 32px;
-        }
-        .contact, .queries {
-            margin: 40px auto;
-            width: 60%;
-            text-align: center;
-        }
-        table {
-            width: 100%;
-            border-spacing: 10px;
-            margin: 20px 0;
-        }
-        .table1 td, .table2 td {
-            padding: 10px;
-            font-size: 18px;
-            text-align: left;
-        }
-        .table1 {
-            background-color: rgba(236, 241, 247, 0.801);
-        }
-        .table2 {
-            background-color: rgb(187, 208, 219);
-            border-radius: 5px;
-            border-style: dotted;
-            border-color: rgb(125, 199, 213);
-        }
-        input[type="text"], input[type="email"] {
-            width: 80%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-        }
-        input[type="submit"] {
-            background-color: darkcyan;
-            color: #000000;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        input[type="submit"]:hover {
-            background-color: #00a4a2;
-        }
-        .bottomdiv {
-            background-color: aqua;
-            color: #000000;
-            text-align: center;
-            padding: 20px;
-            position: relative;
-            width: 100%;
-            margin-top: 30px;
-        }
-        .image-container {
-            text-align: center;
-            margin: 20px;
-        }
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-        }
-        .image-with-text {
+
+        .contact-banner {
             display: flex;
             align-items: center;
             justify-content: center;
-            margin: 20px 0;
+            background: url('Screenshot (77).png') no-repeat center center/cover;
+            color: rgb(155, 216, 226);
+            height: 300px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
         }
-        .image-with-text img {
-            max-width: 40%;
-            margin-right: 20px;
+
+        .contact-banner h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 2.5rem;
+            color: #f9f9f9;
         }
-        .image-with-text div {
-            max-width: 50%;
+
+        .contact-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 30px 15px;
+            background: #f9f9f9;
+            gap: 20px;
+        }
+
+        .contact-details, .contact-form {
+            flex: 1;
+            max-width: 500px;
+            margin: 10px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-details h2, .contact-form h2 {
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+            color: #1f1714;
+            text-align: center;
+        }
+
+        .contact-details p {
+            margin: 10px 0;
+            font-size: 1rem;
+            color: #555;
+        }
+
+        .contact-details img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 1rem;
+        }
+
+        .contact-form textarea {
+            height: 100px;
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            background: #ff5722;
+            color: white;
+            font-size: 1.1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+        }
+
+        .contact-form button:hover {
+            background: #e64a19;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+        }
+
+        footer a {
+            color: #ff5722;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ffdd57;
+        }
+
+        @media (max-width: 768px) {
+            .contact-details, .contact-form {
+                max-width: 100%;
+            }
+
+            .contact-banner h1 {
+                font-size: 2rem;
+            }
         }
     </style>
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <div class="header">
-        <nav id="nav">
-            <h1 class="heading1">FOODIE..!</h1>
-            <ul>
-                <li><a href="home.html" target="_blank">Home |</a></li>
-                <li><a href="product.html" target="_blank">Products |</a></li>
-                <li><a href="adminstration.html" target="_blank">Administration |</a></li>
-                <li><a href="contact.html" target="_blank">Contact</a></li>
-            </ul>
+    <header>
+        <img src="" alt="">
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="reservation.html">Reservations</a>
+            <a href="contact.html">Contact</a>
+            <a href="admin.html">Administration</a>
         </nav>
+    </header>
+
+    <div class="contact-banner">
+     
     </div>
 
-    <!-- Contact Us Section -->
-    <h1 class="heading2">CONTACT US</h1>
+    <section class="contact-section">
+        <div class="contact-details">
+            <h2>Get in Touch</h2>
+            <img src="Screenshot (76).png" alt="Contact Us">
+            <p><strong>Address:</strong> 123 Foodie..!,tambaram,Tamilnadu, India</p>
+            <p><strong>Phone:</strong> +91 8015061628</p>
+            <p><strong>Email:</strong> contact@sasi.com</p>
+            <p><strong>Hours:</strong> Mon-Sun: 10 AM - 10 PM</p>
+        </div>
 
-    <div>
-        <h3>Our Location</h3>
-        <p>We are located in Chennai, near Tambaram. Visit us to get the best services!</p>
-    </div>
+        <div class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="/submit-contact" method="POST">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your full name" required>
 
-    <!-- Contact Information Table -->
-    <div class="contact">
-        <table cellpadding="15px" cellspacing="15px" class="table1">
-            <tr>
-                <td>ADDRESS :</td>
-                <td>Chennai</td>
-            </tr>
-            <tr>
-                <td>LANDMARK :</td>
-                <td>Near Tambaram</td>
-            </tr>
-            <tr>
-                <td>EMAIL :</td>
-                <td>sasi@gmail.com</td>
-            </tr>
-            <tr>
-                <td>PHONE :</td>
-                <td>8015061628</td>
-            </tr>
-        </table>
-    </div>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email address" required>
 
-    <!-- Queries Section -->
-    <h2 class="heading3">QUERIES</h2>
-    <div class="queries">
-        <table cellpadding="15px" cellspacing="15px" class="table2">
-            <tr>
-                <td>NAME :</td>
-                <td><input type="text" placeholder="Enter your name"></td>
-            </tr>
-            <tr>
-                <td>EMAIL :</td>
-                <td><input type="email" placeholder="Enter your E-mail"></td>
-            </tr>
-            <tr>
-                <td>Your Query :</td>
-                <td><input type="text" placeholder="Enter your Queries"></td>
-            </tr>
-            <tr>
-                <td colspan="2">
-                    <input type="submit" value="Submit">
-                </td>
-            </tr>
-        </table>
-    </div>
+                <label for="message">Message</label>
+                <textarea id="message" name="message" placeholder="Your message" required></textarea>
 
-    <!-- Footer Section -->
-    <div class="bottomdiv">
-        <p>&copy; 2024 and Developed by Sathish (24900077)</p>
-    </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 OLIVE GARDEN. All rights reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
 
 </body>
 </html>
+admin.html
+admin.html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OLIVE GARDEN - Administration</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            box-sizing: border-box;
+        }
+
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+
+        header {
+            background: #054c04;
+            color: #fff;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #f9f9f9;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: #ffdd57;
+        }
+
+        header h1 {
+            font-size: 1.5rem;
+        }
+
+        .admin-container {
+            padding: 20px;
+            background: #86c4cc;
+            text-align: center;
+        }
+
+        .admin-container h1 {
+            font-size: 2rem;
+            color: #054c04;
+            margin-bottom: 20px;
+        }
+
+        .admin-items {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .admin-item {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+            text-align: left;
+        }
+
+        .admin-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .admin-item:hover {
+            transform: scale(1.05);
+        }
+
+        .admin-details {
+            padding: 15px;
+        }
+
+        .admin-details h3 {
+            font-size: 1.2rem;
+            color: #054c04;
+            margin-bottom: 8px;
+        }
+
+        .admin-details p {
+            font-size: 0.9rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 10px;
+        }
+
+        footer a {
+            color: #ff5722;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ffdd57;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.2rem;
+            }
+
+            .admin-items {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .admin-item {
+                width: 100%;
+            }
+
+            header nav a {
+                margin: 0 5px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Foodie..!</h1>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="reservation.html">Reservations</a>
+            <a href="contact.html">Contact</a>
+            <a href="admin.html">Administration</a>
+        </nav>
+    </header>
+
+    <div class="admin-container">
+        <h1>Our Leadership Team</h1>
+        <div class="admin-items">
+            <div class="admin-item">
+                <img src="photo.png" alt="CEO">
+                <div class="admin-details">
+                    <h3>Sathish</h3>
+                    <p>CEO - Leading  with a vision of excellence and innovation in hospitality.</p>
+                </div>
+            </div>
+
+            <div class="admin-item">
+                <img src="Screenshot (78).png" alt="Manager">
+                <div class="admin-details">
+                    <h3>Sanjeev Kapoor</h3>
+                    <p>Manager - Ensures smooth operations and a great dining experience for all guests.</p>
+                </div>
+            </div>
+
+            <div class="admin-item">
+                <img src="Screenshot (79).png" alt="Master Chef">
+                <div class="admin-details">
+                    <h3>Vineet Bhatia</h3>
+                    <p>Master Chef - Brings authentic Italian flavors to every dish served.</p>
+                </div>
+            </div>
+
+            <div class="admin-item">
+                <img src="Screenshot (80).png" alt="Assistant Managing Director">
+                <div class="admin-details">
+                    <h3>Pradeep</h3>
+                    <p>Assistant Managing Director - Supporting the team with strategy and execution excellence.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 OLIVE GARDEN. All rights reserved. | <a href="home.html">Back to Home</a></p>
+    </footer>
+
+</body>
+</html>
+
+
 ```
 
 
 
 ## OUTPUT:
-![alt text](<Screenshot (64).png>)
-![alt text](<Screenshot (65).png>)
-![alt text](<Screenshot (66).png>)
-![alt text](<Screenshot (67).png>)
-
+![alt text](<Screenshot (81).png>)
+![alt text](<Screenshot (82).png>)
+![alt text](<Screenshot (83).png>)
+![alt text](<Screenshot (84).png>)
+![alt text](<Screenshot (85).png>)
 
 ## RESULT:
 The program for designing software company website using HTML and CSS is completed successfully.

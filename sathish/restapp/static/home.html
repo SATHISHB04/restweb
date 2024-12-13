@@ -1,146 +1,215 @@
-
 home.html
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Little Lemon</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f7f7f7;
-    }
-    .header {
-      background-color: #dfe6e9;
-      text-align: center;
-      padding: 20px;
-    }
-    .header img {
-      width: 50px;
-      vertical-align: middle;
-    }
-    .header h1 {
-      display: inline;
-      margin-left: 10px;
-    }
-    .navbar {
-      display: flex;
-      justify-content: center;
-      background-color: #2d3436;
-      padding: 10px;
-    }
-    .navbar a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .hero {
-      background-image: url('Black and White Modern Food New Menu Instagram Post.png'); /* Replace with your image path */
-      background-size: cover;
-      background-position: center;
-      color: white;
-      text-align: center;
-      padding: 50px 20px;
-    }
-    .hero h2 {
-      font-size: 36px;
-      margin: 0;
-    }
-    .hero p {
-      margin-top: 10px;
-      font-size: 18px;
-    }
-    .container {
-      display: flex;
-      justify-content: space-around;
-      flex-wrap: wrap;
-      padding: 20px;
-    }
-    .card {
-      background-color: #ffeaa7;
-      width: 250px; /* Adjusted for smaller card size */
-      margin: 10px;
-      padding: 15px;
-      border-radius: 8px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-      text-align: center;
-    }
-    .card img {
-      width: 100%;
-      max-width: 150px; /* Smaller image size */
-      height: auto;
-      border-radius: 8px;
-    }
-    .card h3 {
-      margin-top: 10px;
-    }
-    .card p {
-      font-size: 14px;
-      margin: 10px 0;
-    }
-    .card a {
-      color: #2d3436;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    .card a:hover {
-      color: #00cec9;
-    }
-    .footer {
-      background-color: #2d3436;
-      color: white;
-      text-align: center;
-      padding: 10px 0;
-      margin-top: 20px;
-    }
-    .footer a {
-      color: #00cec9;
-      text-decoration: none;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foodie..!- Home</title>
+    <style>
+      
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            box-sizing: border-box;
+        }
+
+        *, *::before, *::after {
+            box-sizing: inherit;
+        }
+
+        header {
+            background: #054c04;
+            color: #333;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header img {
+            height: 40px;
+        }
+
+        header nav a {
+            text-decoration: none;
+            color: #f9f9f9;
+            font-weight: bold;
+            margin: 0 10px;
+            transition: color 0.3s ease;
+        }
+
+        header nav a:hover {
+            color: #ff5722;
+        }
+
+        .banner {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 30px 20px;
+            background: url('banner-placeholder.jpg') no-repeat center center/cover;
+            color: white;
+            height: 300px;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+        }
+
+        .banner-content {
+            max-width: 50%;
+        }
+
+        .banner-content h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: rgb(4, 82, 38);
+        }
+
+        .banner-content p {
+            font-size: 1rem;
+            margin-bottom: 15px;
+            color: black;
+        }
+
+        .banner-content a {
+            background: #ff5722;
+            color: white;
+            padding: 8px 15px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .banner-content a:hover {
+            background: #e64a19;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            padding: 20px;
+            gap: 15px;
+            background: #f9f9f9;
+        }
+
+        .feature {
+            background: white;
+            border-radius: 10px;
+            padding: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            flex: 1;
+            text-align: center;
+        }
+
+        .feature img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .feature h3 {
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+            color: #1f1714;
+        }
+
+        .feature p {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 10px;
+        }
+
+        footer a {
+            color: #ff5722;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #ffdd57;
+        }
+
+        @media (max-width: 768px) {
+            .banner {
+                flex-direction: column;
+                height: auto;
+                text-align: center;
+            }
+
+            .banner-content {
+                max-width: 100%;
+            }
+
+            .features {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .feature {
+                flex: none;
+            }
+
+            header nav a {
+                margin: 0 5px;
+            }
+        }
+    </style>
 </head>
 <body>
-  
 
-  <div class="navbar">
-    <a href="#home">Home</a>
-    <a href="#menu">Products</a>
-    <a href="#admin">Administration</a>
-    <a href="#contact">Contact</a>
-  </div>
+    <header>
+        
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="menu.html">Menu</a>
+            <a href="reservation.html">Reservations</a>
+            <a href="contact.html">Contact</a>
+            <a href="admin.html">Administration</a>
+        </nav>
+    </header>
 
-  <div class="hero">
-    <h2>30% Off This Weekend</h2>
-    <p>Enjoy exclusive discounts on our delicious menu items this weekend!</p>
-  </div>
-
-  <div class="container">
-    <div class="card">
-      <img src="Black and White Modern Food New Menu Instagram Post.png" alt="Menu Image">
-      <h3>Our New Menu</h3>
-      <p>Discover our new menu with exciting dishes you'll love. Fresh and flavorful!</p>
-      <a href="#menu">See our new menu</a>
+    <div class="banner">
+        <div class="banner-content">
+            <h1>Welcome to FOODIE..!</h1>
+            <p>Experience the finest flavors and a cozy ambiance at Olive Garden. We serve happiness on a plate!</p>
+            <a href="#features">Explore Now</a>
+        </div>
     </div>
-    <div class="card">
-      <img src="Screenshot (58).png" alt="Table Booking">
-      <h3>Book a Table</h3>
-      <p>Reserve your spot and enjoy a delightful dining experience with us.</p>
-      <a href="#booking">Book your table now</a>
-    </div>
-    <div class="card">
-      <img src="Beige Aesthetic Opening Hours Instagram Story.png" alt="Opening Hours">
-      <h3>Opening Hours</h3>
-      <p>Mon - Fri: 2 PM - 10 PM<br>Sat: 2 PM - 11 PM<br>Sun: 2 PM - 9 PM</p>
-    </div>
-  </div>
 
-  <div class="footer">
-    <p>Designed and Developed by <a href="#">SATHISH.B (24900077)</a></p>
-  </div>
+    <section id="features" class="features">
+        <div class="feature">
+            <img src="Black and White Modern Food New Menu Instagram Post.png" alt="Fresh Ingredients">
+            <h3>Fresh Ingredients</h3>
+            <p>We source only the freshest and most organic ingredients to create our dishes.</p>
+        </div>
+        <div class="feature">
+            <img src="black white funny simple restaurant food menu.png" alt="Cozy Ambiance">
+            <h3>Cozy Ambiance</h3>
+            <p>Enjoy your meals in a warm, welcoming, and beautifully designed space.</p>
+        </div>
+        <div class="feature">
+            <img src="White Restaurant Coming Soon Instagram Post.png" alt="Easy Reservations">
+            <h3>Easy Reservations</h3>
+            <p>Book your table in seconds and guarantee yourself an unforgettable experience.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 OLIVE GARDEN. All rights reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
 
 </body>
 </html>
